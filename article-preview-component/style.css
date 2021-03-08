@@ -59,9 +59,7 @@ html {
   padding-right: 0px;
 }
 .social-icons img {
-  /* padding-left: 0.25rem; */
   padding-right: 0.88rem;
-  /* height: 1.5rem; */
   width: auto;
 }
 @media (min-width: 576px) {
