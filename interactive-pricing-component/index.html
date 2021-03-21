@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="introduction" class="row justify-content-center align-items-center text-center order-1">
+      <div class="col-auto">
+        <h1 id="title">Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+    </div>
+    <div id="pricingComponent" class="container order-2">
+      <div id="topRow" class="row align-items-center">
+        <div id="pageViewCol" class="col-md-6 order-md-1 order-1">
+          <span>
+            <span id="pageViewOutputValue"></span>&nbsp;Pageviews
+          </span>
+        </div>
+        <div id="pricingCol" class="col-md-4 col-7 d-flex justify-content-md-end order-md-2 order-3">
+          <span id="pricingOutputValue"></span>
+        </div>
+        <div class="col-md-2 col-5 order-md-3 order-4">
+          <span>/&nbsp;month</span>
+        </div>
+        <div class="col-12 order-md-4 order-2">
+          <div id="rangeRow" class="row">
+            <input type="range" min="0" max="4" value="2" step="1" name="slider" id="slider" class="slider-bar">
+          </div>
+        </div>
+      </div>
+      <div id="middleRow" class="row d-flex justify-content-end">
+        <div class="col-md-10">
+          <span>Monthly Billing</span>
+          <label id="dummyLabel" class="toggle" for="toggleSwitch">
+            <input class="toggle__input" name="" type="checkbox" id="toggleSwitch">
+            <div class="toggle__fill"></div>
+          </label>
+          <span>Yearly Billing <span id="discount">25% <span class="mobile-hidden">discount</span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div id="bottomRow" class="row align-items-center">
+        <div class="col-md-7">
+          <ul>
+            <li> Unlimited websites</li>
+            <li> 100% data ownership</li>
+            <li> Email reports</li>
+          </ul>
+        </div>
+        <div class="col-md-5 d-flex justify-content-md-end">
+          <button type="button" class="btn btn-cta">Start my trial</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution fixed-bottom">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Barabazs/" target="_blank" rel="noopener">Barabazs</a>.
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
