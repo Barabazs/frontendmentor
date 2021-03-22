@@ -57,6 +57,7 @@ body > .container {
   width: 540px;
   box-shadow: 5px 3px 20px var(--GrayishBlue);
 }
+/* Thanks to https://dev.to/dcodeyt/creating-a-css-only-toggle-switch-5cg3 */
 .toggle {
   --width: 2.75rem;
   --height: calc(var(--width) / 2);
