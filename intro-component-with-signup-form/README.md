@@ -25,8 +25,7 @@ Users should be able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
 ### Screenshots
-![Desktop version](screenshots/desktop.png&s=200){:height="50%" width="50%"}
-![Mobile version](screenshots/mobile.png&s=200)
+<img src="screenshots/desktop.png" height="350"> <img src="screenshots/mobile.png" height="350">
 
 ### Links
 
