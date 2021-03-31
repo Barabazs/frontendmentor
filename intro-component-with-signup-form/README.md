@@ -48,4 +48,4 @@ I have decided to add labels to the form for accessibility reasons.
 ## Author
 
 - Github - [Barabazs](https://github.com/Barabazs)
-- Frontend Mentor - [@Barabazs](https://www.frontendmentor.io/profile/dotEsuS)
+- Frontend Mentor - [@Barabazs](https://www.frontendmentor.io/profile/Barabazs)
