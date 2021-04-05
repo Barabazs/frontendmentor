@@ -26,13 +26,12 @@ Users should be able to:
 - **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshots
-![Desktop version](screenshots/desktop.png&s=200)
-![Mobile version](screenshots/mobile.png&s=200)
+<img src="screenshots/desktop.png" height="350"> <img src="screenshots/mobile.png" height="350">
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Source Code](https://github.com/Barabazs/frontendmentor/tree/main/pricing-component-with-toggle)
+- [Live site](https://barabazs.github.io/frontendmentor/pricing-component-with-toggle/)
+- [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/a-bit-of-bootstrap5-but-mostly-vanilla-css-6i5Spvm8N)
 
 ## My process
 
