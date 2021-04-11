@@ -74,6 +74,7 @@ body > .container > .row > h1 {
   box-shadow: 0 0 8px var(--LightGrayishBlue);
 }
 .toggle__fill {
+  display: block;
   position: relative;
   width: var(--toggle-width);
   height: var(--toggle-height);
