@@ -11,12 +11,16 @@ input.oninput = function () {
   input.style.background = `linear-gradient(to left, hsl(224, 65%, 95%) ${progress}%, hsl(174, 77%, 80%) ${progress}%)`;
   pageViewOutput.innerHTML = values[this.value];
   if (toggleSwitch.checked) {
+    toggleSwitch.setAttribute("aria-checked", "true");
+
     pricingOutput.innerHTML = discounted[this.value];
   } else {
+    toggleSwitch.setAttribute("aria-checked", "false");
     pricingOutput.innerHTML = prices[this.value];
   }
 };
 input.oninput();
+
 toggleSwitch.addEventListener("click", () => {
   input.oninput();
 });

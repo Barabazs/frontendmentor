@@ -57,22 +57,27 @@ body > .container {
   width: 540px;
   box-shadow: 5px 3px 20px var(--GrayishBlue);
 }
-/* Thanks to https://dev.to/dcodeyt/creating-a-css-only-toggle-switch-5cg3 */
 .toggle {
-  --width: 2.75rem;
-  --height: calc(var(--width) / 2);
-  --border-radius: calc(var(--height) / 2);
+  --toggle-width: 2.75rem;
+  --toggle-height: calc(var(--toggle-width) / 2);
+  --border-radius: calc(var(--toggle-height) / 2);
   --toggle-fill-size: 1rem;
   display: inline-block;
   cursor: pointer;
 }
 .toggle__input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.toggle__input:focus + .toggle__fill {
+  outline: var(--GrayishBlue) dashed 1px;
 }
 .toggle__fill {
+  display: block;
   position: relative;
-  width: var(--width);
-  height: var(--height);
+  width: var(--toggle-width);
+  height: var(--toggle-height);
   border-radius: var(--border-radius);
   background-color: var(--LightGrayishBlueToggleBackground);
   transition: background .2s;
@@ -80,9 +85,9 @@ body > .container {
 .toggle__fill::after {
   content: "";
   position: absolute;
-  top: calc((var(--height) - var(--toggle-fill-size))/ 2);
-  left: calc((var(--height) - var(--toggle-fill-size))/ 2);
-  bottom: calc((var(--height) - var(--toggle-fill-size))/ 2);
+  top: calc((var(--toggle-height) - var(--toggle-fill-size))/ 2);
+  left: calc((var(--toggle-height) - var(--toggle-fill-size))/ 2);
+  bottom: calc((var(--toggle-height) - var(--toggle-fill-size))/ 2);
   height: var(--toggle-fill-size);
   width: var(--toggle-fill-size);
   background: #ffffff;
@@ -93,7 +98,7 @@ body > .container {
   background: var(--StrongCyan);
 }
 .toggle__input:checked ~ .toggle__fill::after {
-  transform: translateX(var(--height));
+  transform: translateX(var(--toggle-height));
 }
 #topRow {
   padding-left: var(--padding-left-right);

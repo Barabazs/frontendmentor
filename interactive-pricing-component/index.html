@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" role="main">
     <div id="introduction" class="row justify-content-center align-items-center text-center order-1">
       <div class="col-auto">
         <h1 id="title">Simple, traffic-based pricing</h1>
@@ -35,6 +35,7 @@
         <div class="col-12 order-md-4 order-2">
           <div id="rangeRow" class="row">
             <input type="range" min="0" max="4" value="2" step="1" name="slider" id="slider" class="slider-bar">
+            <label for="slider"></label>
           </div>
         </div>
       </div>
@@ -42,8 +43,8 @@
         <div class="col-md-10">
           <span>Monthly Billing</span>
           <label id="dummyLabel" class="toggle" for="toggleSwitch">
-            <input class="toggle__input" name="" type="checkbox" id="toggleSwitch">
-            <div class="toggle__fill"></div>
+            <input class="toggle__input" name="billingtoggle" aria-label="Monthly or Annual billing" aria-checked="false" role="switch" type="checkbox" id="toggleSwitch">
+            <span class="toggle__fill"></span>
           </label>
           <span>Yearly Billing <span id="discount">25% <span class="mobile-hidden">discount</span>
             </span>
