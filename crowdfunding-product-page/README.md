@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 - [Source Code](https://github.com/Barabazs/frontendmentor/tree/main/crowdfunding-product-page)
-- [Live site](https://barabazs.github.io/frontendmentor/pricrowdfunding-product-page/)
-<!-- - [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/?????) -->
+- [Live site](https://barabazs.github.io/frontendmentor/crowdfunding-product-page/)
+- [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/fully-functional-crowdfunding-product-page-BXP90rcw2)
 
 
 ## My process
