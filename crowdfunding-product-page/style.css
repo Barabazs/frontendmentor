@@ -194,7 +194,6 @@ main.container::before {
 .progress-bar {
   background-color: var(--ModerateCyan);
   border-radius: 1rem;
-  width: 78%!important;
 }
 #finance-overview {
   max-height: 215px;
